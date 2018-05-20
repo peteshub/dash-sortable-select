@@ -1,0 +1,5 @@
+include dash_sortable_select/bundle.js
+include dash_sortable_select/bundle.js.map
+include dash_sortable_select/metadata.json
+include README.md
+include LICENSE.md

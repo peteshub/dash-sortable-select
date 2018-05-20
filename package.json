@@ -1,0 +1,45 @@
+{
+  "name": "dash-sortable-select",
+  "version": "0.0.1",
+  "description": "Sortable Select",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peteshub/dash-sortable-select.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peteshub/dash-sortable-select/issues"
+  },
+  "homepage": "https://github.com/peteshub/dash-sortable-select",
+  "scripts": {
+    "copy-lib": "copyfiles -u 1 lib/* dash_sortable_select",
+    "demo": "builder run demo",
+    "install-local": "npm run copy-lib && python setup.py install",
+    "prepublish": "npm test && builder run build-dist && npm run copy-lib",
+    "publish-all": "npm publish && python setup.py sdist upload",
+    "publish-pypi": "npm run prepublish && python setup.py sdist upload",
+    "start": "builder run build-dev",
+    "test": "builder run check",
+    "test-watch": "builder run test-frontend-watch",
+    "test-debug": "builder run test-frontend-debug",
+    "uninstall-local": "pip uninstall dash-sortable-select -y"
+  },
+  "dependencies": {
+    "builder": "3.2.2",
+    "classnames": "^2.2.5",
+    "copyfiles": "^1.2.0",
+    "dash-components-archetype": "^0.2.11",
+    "prop-types": "^15.5.9",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-input-autosize": "^2.2.1",
+    "react-select": "file:../../react-select",
+    "react-sortable-hoc": "^0.7.2"
+  },
+  "devDependencies": {
+    "dash-components-archetype-dev": "^0.2.11",
+    "enzyme": "^2.8.2",
+    "react-test-renderer": "^15.5.4"
+  }
+}
