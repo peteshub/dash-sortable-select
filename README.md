@@ -1,6 +1,6 @@
 # dash-sortable-select
 
-Sortable Select
+Wrapper around sortable (draggable) react-select from https://github.com/aschmoe for Dash.
 
 ## Dash
 
