@@ -34,7 +34,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-input-autosize": "^2.2.1",
-    "react-select": "file:../../react-select",
+    "react-select": "git+https://github.com/peteshub/react-select",
     "react-sortable-hoc": "^0.7.2"
   },
   "devDependencies": {
